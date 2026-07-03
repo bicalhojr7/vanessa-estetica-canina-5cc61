@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vanessa Estética Canina | Luxo e Cuidado para seu Pet</title>
+<meta content="Estúdio de estética canina ultra-premium no Rio de Janeiro. Especialista em banho, tosa e tratamentos de pelagem exclusivos." name="description"/>
+<!-- Fonts & Icons -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#7bdb8e",
+                    "primary-container": "#c2185b",
+                    "on-error-container": "#93000a",
+                    "on-primary-fixed-variant": "#8f003f",
+                    "error": "#ba1a1a",
+                    "primary-fixed": "#ffd9df",
+                    "outline": "#8d6f75",
+                    "primary-fixed-dim": "#ffb1c2",
+                    "tertiary": "#005a27",
+                    "surface-container-highest": "#f7dce0",
+                    "surface-bright": "#fff8f7",
+                    "surface-dim": "#eed4d7",
+                    "surface-container-low": "#fff0f1",
+                    "primary": "#9b0044",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-container": "#7a4b64",
+                    "surface": "#fff8f7",
+                    "secondary": "#804f69",
+                    "inverse-on-surface": "#ffecee",
+                    "inverse-primary": "#ffb1c2",
+                    "tertiary-fixed": "#96f8a8",
+                    "secondary-fixed-dim": "#f2b5d3",
+                    "on-tertiary-container": "#97f8a9",
+                    "surface-variant": "#f7dce0",
+                    "on-secondary-fixed": "#330d24",
+                    "on-background": "#26181b",
+                    "surface-container": "#ffe8eb",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "tertiary-container": "#007535",
+                    "on-tertiary-fixed": "#00210a",
+                    "surface-container-high": "#fde2e5",
+                    "inverse-surface": "#3d2c2f",
+                    "on-primary-fixed": "#3f0018",
+                    "on-secondary-fixed-variant": "#653851",
+                    "background": "#fff8f7",
+                    "surface-tint": "#b90c55",
+                    "on-surface-variant": "#594045",
+                    "on-tertiary": "#ffffff",
+                    "secondary-container": "#fec0de",
+                    "on-surface": "#26181b",
+                    "on-tertiary-fixed-variant": "#005323",
+                    "outline-variant": "#e1bec4",
+                    "error-container": "#ffdad6",
+                    "on-error": "#ffffff",
+                    "on-primary-container": "#ffd9df",
+                    "secondary-fixed": "#ffd8e9"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "base": "8px",
+                    "lg": "48px",
+                    "sm": "12px",
+                    "xs": "4px",
+                    "xl": "80px",
+                    "md": "24px",
+                    "container-max": "1280px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Be Vietnam Pro"],
+                    "display-lg-mobile": ["Hanken Grotesk"],
+                    "headline-lg-mobile": ["Hanken Grotesk"],
+                    "display-lg": ["Hanken Grotesk"],
+                    "body-md": ["Be Vietnam Pro"],
+                    "button": ["Hanken Grotesk"],
+                    "headline-lg": ["Hanken Grotesk"],
+                    "label-bold": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.1", "fontWeight": "800"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "display-lg": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "button": ["16px", {"lineHeight": "1.0", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "label-bold": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+        .bento-item-large {
+            grid-column: span 2;
+        }
+        @media (min-width: 768px) {
+            .bento-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .bento-item-large {
+                grid-column: span 1;
+            }
+        }
+        .shadow-pop {
+            box-shadow: 4px 4px 0px 0px #26181b;
+        }
+        .active-faq-content {
+            display: block !important;
+        }
+    </style>
+<!-- Structured Data -->
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Vanessa Estética Canina",
+      "image": "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7",
+      "@id": "https://vanessaesteticacanina.com.br",
+      "url": "https://vanessaesteticacanina.com.br",
+      "telephone": "+5521986133926",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rio de Janeiro",
+        "addressLocality": "Rio de Janeiro",
+        "addressRegion": "RJ",
+        "postalCode": "20000-000",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -22.9068,
+        "longitude": -43.1729
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background antialiased overflow-x-hidden">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface border-b-2 border-primary">
+<div class="flex justify-between items-center h-20 px-md max-w-container-max mx-auto">
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-primary text-[32px]">pets</span>
+<span class="font-headline-lg text-headline-lg font-bold text-primary">Vanessa Estética Canina</span>
+</div>
+<a class="hidden md:flex items-center gap-2 bg-primary text-on-primary px-6 py-3 font-button text-button transition-transform active:scale-95 shadow-pop" href="https://wa.me/5521986133926">
+                Agendar
+            </a>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-[32px]">menu</span>
+</button>
+</div>
+</nav>
+<main class="mt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[751px] flex flex-col justify-center items-center overflow-hidden px-md py-xl bg-surface">
+<div class="z-10 text-center max-w-4xl mx-auto">
+<span class="inline-block bg-primary text-on-primary px-3 py-1 font-label-bold text-label-bold mb-md uppercase tracking-widest">Ultra-Premium Pet Care</span>
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary mb-md">
+                    Beleza que transforma. Arte que encanta.
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-lg max-w-2xl mx-auto">
+                    No estúdio Vanessa Estética Canina, não entregamos apenas higiene. Oferecemos um ritual de beleza e autoestima pet, elevando a essência do seu companheiro em um ambiente de puro luxo e sofisticação.
+                </p>
+<div class="flex flex-col md:flex-row gap-md justify-center">
+<a class="bg-primary text-on-primary px-8 py-5 font-button text-button shadow-pop hover:bg-primary-container transition-colors flex items-center justify-center gap-2" href="https://wa.me/5521986133926">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+                        Agendar no WhatsApp
+                    </a>
+</div>
+</div>
+<div class="mt-lg w-full max-w-container-max">
+<div class="aspect-[16/9] md:aspect-[21/9] w-full overflow-hidden border-2 border-primary">
+<img class="w-full h-full object-cover" data-alt="A high-end, luxury close-up portrait of a perfectly groomed Bichon Frise sitting on a pink velvet throne. The lighting is editorial and soft, highlighting the pristine white coat against a sophisticated pink and white studio background. The atmosphere is vibrant and modular, emphasizing professional canine aesthetics and luxury pet care." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP393OAFQ0WdN-PFlNDanO54rQvsfYWmlQmrikG7XZVncXLT08gk9hxNyqgEF81WyFssSKWsK-dodojgAQfLm-g7WQ5wylHhjz_lsVzqRIx74pmP1xKTrRupww3ofvn3mW87NTaJtq2GCRpg1GVTe4tO_cr98_QgkDDKKJAq-NkdrrCof9MDPno0Gn6B5UACwdECelQ2bngwDYk0m6CoFaBC-77zJkbhSUdlJcU4BTxaOMZG_IOM5ICQ4o3xGMKum6yBQ2QgQTvhU"/>
+</div>
+</div>
+</section>
+<!-- Serviços Modular -->
+<section class="py-xl px-md max-w-container-max mx-auto">
+<div class="mb-lg">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-xs">Nossos Serviços</h2>
+<div class="h-1 w-20 bg-primary"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<!-- Card 1 -->
+<div class="bg-primary p-md flex flex-col justify-between min-h-[300px] transition-all hover:-translate-y-1">
+<div>
+<span class="material-symbols-outlined text-on-primary text-[40px] mb-md">content_cut</span>
+<h3 class="font-headline-lg text-headline-lg text-on-primary mb-sm">Banho &amp; Tosa Especializada</h3>
+<p class="font-body-md text-body-md text-on-primary opacity-90">Técnicas de corte precisas que respeitam a morfologia de cada raça, aliadas a produtos de luxo.</p>
+</div>
+<span class="font-label-bold text-label-bold text-on-primary mt-lg border-t border-on-primary pt-md flex justify-between items-center">
+                        VER DETALHES <span class="material-symbols-outlined">arrow_forward</span>
+</span>
+</div>
+<!-- Card 2 -->
+<div class="bg-secondary-container p-md flex flex-col justify-between min-h-[300px] transition-all hover:-translate-y-1">
+<div>
+<span class="material-symbols-outlined text-primary text-[40px] mb-md">spa</span>
+<h3 class="font-headline-lg text-headline-lg text-primary mb-sm">Tratamentos de Pelagem</h3>
+<p class="font-body-md text-body-md text-primary opacity-90">Hidratações profundas, reconstruções e tratamentos térmicos para brilho e maciez extrema.</p>
+</div>
+<span class="font-label-bold text-label-bold text-primary mt-lg border-t border-primary pt-md flex justify-between items-center">
+                        SAIBA MAIS <span class="material-symbols-outlined">arrow_forward</span>
+</span>
+</div>
+<!-- Card 3 -->
+<div class="bg-primary p-md flex flex-col justify-between min-h-[300px] transition-all hover:-translate-y-1">
+<div>
+<span class="material-symbols-outlined text-on-primary text-[40px] mb-md">clinical_notes</span>
+<h3 class="font-headline-lg text-headline-lg text-on-primary mb-sm">Consultoria de Estética</h3>
+<p class="font-body-md text-body-md text-on-primary opacity-90">Análise personalizada para definir o melhor estilo e cronograma de cuidados para seu pet.</p>
+</div>
+<span class="font-label-bold text-label-bold text-on-primary mt-lg border-t border-on-primary pt-md flex justify-between items-center">
+                        CONSULTAR <span class="material-symbols-outlined">arrow_forward</span>
+</span>
+</div>
+</div>
+</section>
+<!-- Sobre a Vanessa -->
+<section class="py-xl bg-surface-container">
+<div class="max-w-container-max mx-auto px-md grid grid-cols-1 md:grid-cols-2 gap-lg items-center">
+<div class="order-2 md:order-1">
+<div class="border-2 border-primary p-xs shadow-pop">
+<img class="w-full h-full object-cover" data-alt="A professional portrait of a grooming artist, Vanessa, working with focused precision on a small fluffy dog. The environment is a clean, modern grooming studio with pink and white accents. She is wearing a professional stylish apron. The mood is warm, human, and professional, conveying exclusive care and artistic transformation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAN00-VEoTwq1sTSnarN8L8sk3FfIg6JPcwLvxmA9q44CLDN87dLEnLK110uM_l6TfUlyqxDHzddM89f6Jx2rTGp3TOeisBnfSEYICVvpoCYnZpszvNj2ixx_IGfIxf3qkjUDBKmg8NJ3XGMMSzXAv5C8fYPkqZpkqyWx9GCNnEgeN3rz11O8gMyYjLhQDoiX-R5zSOaXWOr5AYX2MceKiP-QynTBFHWtZnmpTrVE5gfH7OXd5Tta6r6_EsDwzxld1JKuZQ1f_1cD0"/>
+</div>
+</div>
+<div class="order-1 md:order-2">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-md">O Toque de Vanessa</h2>
+<p class="font-body-lg text-body-lg text-on-surface mb-md">
+                        Com anos de experiência no mercado de alto luxo, Vanessa transformou a estética canina em uma forma de arte. Cada animal que passa pelo estúdio recebe uma consultoria exclusiva, onde cada detalhe é planejado para realçar sua beleza natural e garantir o máximo bem-estar.
+                    </p>
+<p class="font-body-lg text-body-lg text-on-surface font-bold">
+                        "Meu compromisso não é apenas com a estética, mas com a alma de cada pet que confia em minhas mãos."
+                    </p>
+<div class="mt-lg grid grid-cols-2 gap-md">
+<div class="bg-primary text-on-primary p-md">
+<div class="font-display-lg-mobile text-display-lg-mobile mb-xs">10+</div>
+<div class="font-label-bold text-label-bold opacity-80 uppercase">Anos de Arte</div>
+</div>
+<div class="bg-secondary-container text-primary p-md">
+<div class="font-display-lg-mobile text-display-lg-mobile mb-xs">5k+</div>
+<div class="font-label-bold text-label-bold opacity-80 uppercase">Pets Felizes</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-xl px-md max-w-4xl mx-auto">
+<div class="text-center mb-lg">
+<h2 class="font-headline-lg text-headline-lg text-primary">Dúvidas Frequentes</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Tudo o que você precisa saber sobre nosso atendimento exclusivo.</p>
+</div>
+<div class="space-y-md">
+<div class="border-2 border-primary">
+<button class="w-full text-left p-md flex justify-between items-center font-label-bold text-label-bold text-primary bg-surface hover:bg-primary-container hover:text-on-primary transition-colors faq-trigger">
+                        QUAIS SÃO OS HORÁRIOS DE ATENDIMENTO?
+                        <span class="material-symbols-outlined">expand_more</span>
+</button>
+<div class="hidden p-md font-body-md text-body-md bg-white text-on-surface border-t border-primary faq-content">
+                        Atendemos de segunda a sábado, das 09:00 às 18:00, exclusivamente com agendamento prévio para garantir a atenção total que seu pet merece.
+                    </div>
+</div>
+<div class="border-2 border-primary">
+<button class="w-full text-left p-md flex justify-between items-center font-label-bold text-label-bold text-primary bg-surface hover:bg-primary-container hover:text-on-primary transition-colors faq-trigger">
+                        VOCÊS TRABALHAM COM TODAS AS RAÇAS?
+                        <span class="material-symbols-outlined">expand_more</span>
+</button>
+<div class="hidden p-md font-body-md text-body-md bg-white text-on-surface border-t border-primary faq-content">
+                        Sim, somos especialistas em estética de raças pequenas, médias e grandes, com técnicas específicas para cada tipo de pelagem e comportamento.
+                    </div>
+</div>
+<div class="border-2 border-primary">
+<button class="w-full text-left p-md flex justify-between items-center font-label-bold text-label-bold text-primary bg-surface hover:bg-primary-container hover:text-on-primary transition-colors faq-trigger">
+                        COMO É GARANTIDA A SEGURANÇA DO MEU PET?
+                        <span class="material-symbols-outlined">expand_more</span>
+</button>
+<div class="hidden p-md font-body-md text-body-md bg-white text-on-surface border-t border-primary faq-content">
+                        Utilizamos equipamentos de última geração e produtos hipoalergênicos. O ambiente é 100% esterilizado e monitorado, com protocolos rígidos de manuseio sem estresse.
+                    </div>
+</div>
+</div>
+</section>
+<!-- CTA Final -->
+<section class="py-xl px-md">
+<div class="max-w-container-max mx-auto bg-primary text-on-primary p-lg text-center shadow-pop border-4 border-primary-fixed">
+<h2 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg mb-md">
+                    Pronto para a transformação?
+                </h2>
+<p class="font-body-lg text-body-lg mb-lg max-w-2xl mx-auto opacity-90">
+                    Garanta agora o horário para o seu pet no estúdio de estética mais exclusivo do Rio de Janeiro. Clique abaixo e fale direto com a nossa equipe.
+                </p>
+<a class="inline-flex items-center gap-4 bg-white text-primary px-10 py-6 font-button text-xl font-bold transition-all hover:scale-105 active:scale-95 shadow-[8px_8px_0px_0px_rgba(0,0,0,0.2)]" href="https://wa.me/5521986133926">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+                    AGENDAR PELO WHATSAPP
+                </a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-primary-container w-full py-xl border-t-2 border-on-primary">
+<div class="flex flex-col md:flex-row justify-between items-center px-md gap-md max-w-container-max mx-auto">
+<div class="flex flex-col items-center md:items-start">
+<span class="font-headline-lg text-headline-lg font-bold text-on-primary mb-xs">Vanessa Estética Canina</span>
+<p class="font-body-md text-body-md text-on-primary opacity-80 text-center md:text-left">© 2024 Vanessa Estética Canina. Todos os direitos reservados.</p>
+</div>
+<nav class="flex flex-wrap justify-center gap-md">
+<a class="font-body-md text-body-md text-on-primary opacity-90 hover:text-secondary-container transition-opacity" href="#">Serviços</a>
+<a class="font-body-md text-body-md text-on-primary opacity-90 hover:text-secondary-container transition-opacity" href="#">FAQ</a>
+<a class="font-body-md text-body-md text-on-primary opacity-90 hover:text-secondary-container transition-opacity" href="#">Contato</a>
+<a class="font-body-md text-body-md text-secondary-fixed underline hover:text-secondary-container transition-opacity" href="https://wa.me/5521986133926">WhatsApp (21) 98613-3926</a>
+</nav>
+</div>
+</footer>
+<script>
+        // FAQ Accordion Interaction
+        document.querySelectorAll('.faq-trigger').forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                const content = trigger.nextElementSibling;
+                const icon = trigger.querySelector('.material-symbols-outlined');
+                
+                // Close others
+                document.querySelectorAll('.faq-content').forEach(other => {
+                    if (other !== content) {
+                        other.classList.add('hidden');
+                        other.previousElementSibling.querySelector('.material-symbols-outlined').style.transform = 'rotate(0deg)';
+                    }
+                });
+
+                // Toggle current
+                content.classList.toggle('hidden');
+                icon.style.transform = content.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+                icon.style.transition = 'transform 0.3s ease';
+            });
+        });
+
+        // Simple Fade-in micro-interaction
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body></html>
